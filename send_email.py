@@ -3,8 +3,8 @@ import smtplib
 from email.mime.text import MIMEText
 
 def send_email(message):
-    sender = 'charlestsai0919@gmail.com'
-    recipient = 'charles.cai@mail.utoronto.ca'
+    sender = 'yichen.charles.cai@outlook.com'
+    recipient = 'charlestsai0919@gmail.com'
     subject = 'Message from Webpage'
     body = message
 
