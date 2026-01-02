@@ -1,0 +1,66 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55554
+[33mPress CTRL+C to quit[0m
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50233
+[33mPress CTRL+C to quit[0m
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 50233 is in use by another program. Either identify and stop that program, or start the server with a different port.
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 50233 is in use by another program. Either identify and stop that program, or start the server with a different port.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50284
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Aug/2024 06:11:37] "OPTIONS /send-email HTTP/1.1" 200 -
+127.0.0.1 - - [14/Aug/2024 06:11:38] "POST /send-email HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50284
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Aug/2024 06:14:08] "OPTIONS /send-email HTTP/1.1" 200 -
+127.0.0.1 - - [14/Aug/2024 06:14:09] "POST /send-email HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50286
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Aug/2024 18:16:21] "OPTIONS /send-email HTTP/1.1" 200 -
+127.0.0.1 - - [14/Aug/2024 18:16:22] "POST /send-email HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50286
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Aug/2024 18:17:13] "OPTIONS /send-email HTTP/1.1" 200 -
+127.0.0.1 - - [14/Aug/2024 18:17:14] "POST /send-email HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50286
+[33mPress CTRL+C to quit[0m
+ * Serving Flask app 'app'
+ * Debug mode: off
+Address already in use
+Port 50286 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Traceback (most recent call last):
+  File "/u/yichen/public_html/app.py", line 38, in <module>
+    threading.Thread(target=shutdown_server).start()
+NameError: name 'threading' is not defined
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50286
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [14/Aug/2024 19:17:34] "OPTIONS /send-email HTTP/1.1" 200 -
+127.0.0.1 - - [14/Aug/2024 19:17:35] "POST /send-email HTTP/1.1" 200 -

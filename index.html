@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<!--
+	Template by HTML5 UP, Edited by Yichen Cai
+-->
+<html>
+	<head>
+		<title>Yichen Cai</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Yichen Cai</strong>    <br />
+					AI Research Intern @ Vanguard    <br />
+					MSc in Applied Computing    <br />
+					University of Toronto</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Yichen (Charles) Cai</h2>
+							<h3>MScAC Student, Dept of Computer Science, University of Toronto</h3>
+						</header>
+						<p>I am a passionate Computer Science student currently doing research at Vanguard as part of the Master of Science in Applied Computing program at University of Toronto. Computer science is one of the most revolutionary technologies witnessed by our generation especially with the power of AI. My interest in software engineering and AI comes together as a passion to democratize AI. I see a future where AI-driven solutions can serve like traditional software products, yet still being accessible and transparent.</p>
+
+						<p><h3>Recent Work </h3>
+							<a href="https://arxiv.org/abs/2504.11622" target="_blank">• Acoustic Side-Channel Attacks on Noisy Keyboards with LLM-Assisted Typo Correction</a><br>
+						    <a href="assets/CSC494_Final_Report.pdf" target="_blank">• Social Learning in Multi-Agent Systems</a><br>
+						    <a href="https://gitfront.io/r/cycv5/MiT3PfB7V8Nb/MiniDatabase/" target="_blank">• MiniDB Database</a><br>
+						    <a href="https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Cai_DACNet_A_Deep_Automated_Checkout_Network_With_Selective_Deblurring_CVPRW_2023_paper.pdf" target="_blank">• DACNet: A Deep Automated Checkout Network with Selective Deblurring</a><br>
+					    </p>
+
+						<p><h3>Past TAship</h3> 
+							CSC236 [Introduction to the Theory of Computation], Fall 2024</p>
+
+						<p><h3>Contact </h3>
+						    Email: yichen[at]cs[dot]toronto[dot]edu</p>
+
+						<ul class="actions">
+							<li><a href="assets/Resume_Intro_MScAC.pdf" class="button">Resume</a></li>
+						</ul>
+					</section>
+					
+					<div id="message-board" class="message-board">
+						<h2>Leave a Message</h2>
+						<form class="message-form" action="https://api.web3forms.com/submit" method="POST">
+							
+							<!-- Replace with your Access Key -->
+							<input type="hidden" name="access_key" value="97d0a795-c563-41e9-a7c0-efd503ecf8e7">
+						
+							<!-- Form Inputs. Each input must have a name="" attribute -->
+							<input type="text" name="name" placeholder="Enter your preferred name (optional)" >
+							<input type="email" name="email" placeholder="Enter your email/contact (optional)" >
+							<textarea name="message" placeholder="Type your message here..." rows="5" required></textarea>
+						
+							<!-- Honeypot Spam Protection -->
+							<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+						
+							<!-- Custom Confirmation / Success Page -->
+							<input type="hidden" name="redirect" value="https://www.cs.toronto.edu/~yichen/#message-board">
+						
+							<button class="button" type="submit" onclick="onSubmit()">Submit</button>
+							<script>
+								function onSubmit() {
+									alert('Thank you for your message!');
+								}
+							</script>
+						
+						</form>
+						<style>
+							.message-form {
+								display: flex;
+								flex-direction: column;
+								gap: 20px; /* Adjust the spacing between elements */
+								width: 90%; /* Adjust the width as needed */
+								margin: 0 auto; /* Center the form horizontally */
+								margin-bottom: 20px;
+							}
+
+							input, textarea {
+								padding: 10px;
+								font-size: 16px;
+								width: 100%; /* Make the inputs and textarea take full width of the container */
+								box-sizing: border-box; /* Include padding and border in the element's total width and height */
+							}
+
+							textarea {
+								resize: vertical; /* Allow vertical resizing of the textarea */
+							}
+
+							button {
+								padding: 10px;
+								width: 150px; /* Set a fixed width for the button */
+								margin: 0 auto; /* Center the button horizontally */
+								text-align: center; /* Center the text horizontally */
+							}
+						</style>
+					</div>
+
+					<!-- <div class="message-board">
+						<h2>Leave a Message</h2>
+						<div id="messages"></div>
+						<div class="message-form">
+							<div class="textarea-container">
+								<textarea id="messageInput" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+							</div>
+							<button class="button" onclick="addMessage()">Submit</button>
+						</div>
+						<style>
+							.message-form {
+								display: flex;
+								flex-direction: column;
+								align-items: flex-end;
+							}
+
+							.textarea-container {
+								width: 100%;
+								display: flex;
+								justify-content: flex-start;
+							}
+
+							.button {
+								margin-top: 10px; /* Adjust the spacing as needed */
+							}
+						</style>
+					</div> -->
+				
+					<!-- <script>
+						async function addMessage() {
+							const messageInput = document.getElementById('messageInput');
+							const messageText = messageInput.value;
+							if (messageText.trim() !== "") {
+								const formData = new FormData();
+								formData.append('message', messageText);
+
+								const response = await fetch('http://127.0.0.1:50286/send-email', {
+									method: 'POST',
+									body: formData
+								});
+
+								const result = await response.text();
+								if (result.includes("success")){
+									alert(result);
+								}
+								else {
+									const response2 = await fetch('http://127.0.0.1:50787/send-email', {
+									method: 'POST',
+									body: formData
+								});
+
+								result = await response2.text();
+								alert(result2);
+								}
+								messageInput.value = '';
+							}
+						}
+				
+					</script> -->
+
+					
+				<!-- Two -->
+					<!-- <section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+					</section> -->
+
+
+
+					<!-- // const messageText = messageInput.value;
+							// if (messageText.trim() !== "") {
+							// 	const formData = new FormData();
+							// 	formData.append('message', messageText);
+							// 	// First fetch call to start the server by running the CGI script
+							// 	fetch('cgi-bin/start_server.cgi', {
+							// 		method: 'POST'
+							// 	})
+							// 	// .then(response => response.text())
+							// 	.then(data => {
+							// 		console.log('Server started:', data);
+
+							// 		// Now make the second POST call to send data to the server
+
+							// 		fetch('http://127.0.0.1:50284/send-email', {
+							// 			method: 'POST',
+							// 			body: formData
+							// 		});
+							// 	})
+							// 	// .then(response => response.text())
+							// 	.then(data => {
+							// 		console.log('Data posted to server:', data);
+							// 		alert('Script executed and data posted successfully!');
+							// 	})
+							// 	.catch(error => {
+							// 		console.error('Error:', error);
+							// 		alert('An error occurred.');
+							// 	});
+							// } -->
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://x.com/cycv5" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/cycv5" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yichen-cai-5329b3121/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Yichen Cai</li>
+					</ul>
+				</div>
+			</footer>
+			
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
